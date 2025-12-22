@@ -30,7 +30,7 @@ The plugin now supports **both one-time payments and subscription products**. Yo
    - **Name**: e.g., "Premium Monthly Plan"
    - **Billing**: **Recurring** (monthly, yearly, etc.)
    - **Price**: Set your subscription price
-3. **Copy Product ID** (format: `prod_xxx-xxx-xxx`)
+3. **Copy Product ID** (format: `xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`)
 
 ### Step 2: Configure WooCommerce Product
 
@@ -67,7 +67,7 @@ Right sidebar on Product Edit page
 #### 2. Polar Product ID
 - **Type:** Text field
 - **Purpose:** Link to Polar Product ID
-- **Format:** `prod_xxx-xxx-xxx`
+- **Format:** `xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`
 - **Required when:**
   - Subscription is enabled
   - OR using "From Product Meta Field" mapping mode
@@ -100,10 +100,10 @@ IF "Product Mapping" = "Single Product + Dynamic Pricing"
 **Example:**
 ```
 Cart contains:
-- Product A (subscription enabled, Polar ID: prod_sub_123)
+- Product A (subscription enabled, Polar ID: 01234567-89ab-cdef-0123-456789abcdef)
 - Product B (regular product)
 
-Result: Checkout uses prod_sub_123 (subscription takes priority)
+Result: Checkout uses 01234567-89ab-cdef-0123-456789abcdef (subscription takes priority)
 ```
 
 ---
@@ -135,8 +135,8 @@ Note: The one-time product will be processed as part of subscription
 ### Scenario 4: Multiple Subscriptions
 ```
 Cart:
-- 1x Basic Plan (subscription, prod_basic_123)
-- 1x Pro Plan (subscription, prod_pro_456)
+- 1x Basic Plan (subscription, a1234567-89ab-cdef-0123-456789abcdef)
+- 1x Pro Plan (subscription, b2345678-90ab-cdef-0123-456789abcdef)
 
 Result: Multiple products checkout with both Product IDs
 ```
@@ -182,7 +182,7 @@ After purchase:
 
 **Polar Settings:**
 - ✅ Enable Polar Subscription
-- Polar Product ID: `prod_premium_monthly_123`
+- Polar Product ID: `e5678901-23ab-cdef-0123-456789abcdef`
 
 **Polar Product (on Polar.sh):**
 - Billing: Recurring - Monthly
@@ -194,9 +194,9 @@ After purchase:
 
 | WooCommerce | Polar Product ID | Polar Billing |
 |-------------|------------------|---------------|
-| Basic Plan | prod_basic_123 | $10/month |
-| Pro Plan | prod_pro_456 | $25/month |
-| Enterprise | prod_ent_789 | $100/month |
+| Basic Plan | a1234567-89ab-cdef-0123-456789abcdef | $10/month |
+| Pro Plan | b2345678-90ab-cdef-0123-456789abcdef | $25/month |
+| Enterprise | c3456789-01ab-cdef-0123-456789abcdef | $100/month |
 
 Each product configured with:
 - ✅ Enable Polar Subscription
@@ -206,10 +206,10 @@ Each product configured with:
 
 | WooCommerce Product | Type | Polar Config |
 |---------------------|------|--------------|
-| Premium Plan | Subscription | ✅ Enabled, prod_sub_123 |
+| Premium Plan | Subscription | ✅ Enabled, 01234567-89ab-cdef-0123-456789abcdef |
 | eBook | One-time | ❌ Disabled |
 | Course | One-time | ❌ Disabled |
-| VIP Access | Subscription | ✅ Enabled, prod_vip_456 |
+| VIP Access | Subscription | ✅ Enabled, d4567890-12ab-cdef-0123-456789abcdef |
 
 ---
 
@@ -239,7 +239,7 @@ Each product configured with:
 
 **Solution:**
 1. Verify Product ID on Polar.sh matches WooCommerce
-2. Check Product ID format: `prod_xxx-xxx-xxx`
+2. Check Product ID format: `xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`
 3. Enable debug logging to verify
 
 ### Customer Charged Wrong Amount
