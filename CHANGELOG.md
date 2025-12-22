@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.1] - 2024-12-22
+
+### 🔧 Fixed
+- Corrected Product ID format in all documentation and examples
+- Changed from incorrect `prod_xxx-xxx-xxx` format to correct UUID format
+- Updated placeholder in product meta box to use example UUID
+- All Product ID examples now use proper UUID v4 format: `xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`
+
+### 📚 Documentation
+- Added PRODUCT-ID-FORMAT.md - Complete guide about Polar Product ID format
+- Updated all examples to use correct UUID format
+- Clarified that Polar uses standard UUID v4 for Product IDs
+
+### 🔒 Security
+- Removed any real Product IDs from documentation
+- All examples now use safe, fictional UUIDs
+
 ## [1.1.0] - 2024-12-22
 
 ### 🎉 Added

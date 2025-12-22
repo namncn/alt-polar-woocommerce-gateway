@@ -120,6 +120,12 @@ GPL v2 or later
 
 ## Changelog
 
+### 1.1.1 (2024-12-22)
+- 🔧 Fixed Product ID format in all documentation
+- 🔧 Updated examples to use correct UUID format (xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx)
+- 📚 Added PRODUCT-ID-FORMAT.md guide
+- 🔒 Removed real Product IDs from examples
+
 ### 1.1.0 (2024-12-22)
 - ✨ **NEW:** Subscription products support
 - ✨ **NEW:** Product meta box for per-product Polar configuration
