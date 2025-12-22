@@ -36,7 +36,7 @@ Accept payments via Polar.sh Checkout for your WooCommerce store.
 
 1. Go to https://polar.sh → **Products** → **Create Product**
 2. Set price type to "Pay what you want" or "Custom"
-3. Copy the Product ID (format: `prod_xxx-xxx-xxx`)
+3. Copy the Product ID (format: `xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`)
 
 ### Step 2: Get Access Token
 

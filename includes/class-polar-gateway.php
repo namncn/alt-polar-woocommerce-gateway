@@ -558,7 +558,7 @@ class WC_Polar_Gateway extends WC_Payment_Gateway {
                        name="_polar_product_id" 
                        value="<?php echo esc_attr($polar_product_id); ?>" 
                        class="short"
-                       placeholder="prod_xxx-xxx-xxx">
+                       placeholder="01234567-89ab-cdef-0123-456789abcdef">
                 <span class="description">
                     <?php _e('Enter the Polar Product ID for this product. Required if subscription is enabled or using "From Product Meta Field" mapping.', 'apwg'); ?>
                 </span>
