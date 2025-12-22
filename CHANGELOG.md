@@ -8,7 +8,7 @@ All notable changes to this project will be documented in this file.
 - **Subscription Products Support** - Products can now be sold as recurring subscriptions
 - Product meta box "Polar Payment Settings" on product edit page
 - Checkbox to enable Polar Subscription per product
-- Field to enter Polar Product ID per product
+- Field to enter Polar Product ID per product (UUID format)
 - Smart payment logic with subscription priority
 - Support for mixed carts (subscription + one-time products)
 - Multiple subscriptions in single cart
@@ -21,16 +21,19 @@ All notable changes to this project will be documented in this file.
 - `prepare_checkout_data()` now checks for subscription products first
 - Webhook handler now processes `subscription.created` events
 - Enhanced error messages for missing Polar Product IDs
+- Updated all documentation with correct Product ID format (UUID)
 
 ### 📚 Documentation
 - Added SUBSCRIPTION-GUIDE.md with complete setup instructions
 - Updated README.md with subscription feature information
 - Updated Vietnamese translations (42 total strings)
+- Corrected Product ID format examples (UUID: `xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`)
 
 ### 🐛 Fixed
 - Improved webhook matching using checkout_id
 - Better validation for subscription products
 - Duplicate order completion prevention
+- Product ID format examples now use correct UUID format
 
 ## [1.0.0] - 2024-12-21
 
