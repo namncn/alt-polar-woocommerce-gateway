@@ -3,7 +3,7 @@
  * Plugin Name: Polar WooCommerce Payment Gateway by ALT
  * Plugin URI: https://namncn.com/product/alt-polar-woocommerce-gateway
  * Description: Accept payments via Polar.sh Checkout for your WooCommerce store
- * Version: 1.1.0
+ * Version: 1.1.1
  * Author: Nam Truong
  * Author URI: https://namncn.com
  * Text Domain: apwg
@@ -24,7 +24,7 @@ if (!in_array('woocommerce/woocommerce.php', apply_filters('active_plugins', get
     return;
 }
 
-define('POLAR_WC_VERSION', '1.1.0');
+define('POLAR_WC_VERSION', '1.1.1');
 define('POLAR_WC_PLUGIN_DIR', plugin_dir_path(__FILE__));
 
 function polar_wc_init_gateway() {
