@@ -1,0 +1,212 @@
+# Copyright (C) 2026 Nam Truong
+# This file is distributed under the GPL v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Polar WooCommerce Payment Gateway by ALT 1.2.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/alt-polar-woocommerce-gateway\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-03-03T03:06:11+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: apwg\n"
+
+#. Plugin Name of the plugin
+#: alt-polar-woocommerce-gateway.php
+msgid "Polar WooCommerce Payment Gateway by ALT"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: alt-polar-woocommerce-gateway.php
+msgid "https://namncn.com/product/alt-polar-woocommerce-gateway"
+msgstr ""
+
+#. Description of the plugin
+#: alt-polar-woocommerce-gateway.php
+msgid "Accept payments via Polar.sh Checkout for your WooCommerce store"
+msgstr ""
+
+#. Author of the plugin
+#: alt-polar-woocommerce-gateway.php
+msgid "Nam Truong"
+msgstr ""
+
+#. Author URI of the plugin
+#: alt-polar-woocommerce-gateway.php
+msgid "https://namncn.com"
+msgstr ""
+
+#: alt-polar-woocommerce-gateway.php:62
+msgid "Settings"
+msgstr ""
+
+#: includes/class-wc-polar-gateway.php:24
+msgid "Polar"
+msgstr ""
+
+#: includes/class-wc-polar-gateway.php:25
+msgid "Accept payments via Polar.sh Checkout"
+msgstr ""
+
+#: includes/class-wc-polar-gateway.php:57
+msgid "Enable/Disable"
+msgstr ""
+
+#: includes/class-wc-polar-gateway.php:59
+msgid "Enable Polar Payment Gateway"
+msgstr ""
+
+#: includes/class-wc-polar-gateway.php:63
+msgid "Title"
+msgstr ""
+
+#: includes/class-wc-polar-gateway.php:65
+msgid "Payment method title that customers will see during checkout."
+msgstr ""
+
+#: includes/class-wc-polar-gateway.php:66
+msgid "Credit/Debit Card"
+msgstr ""
+
+#: includes/class-wc-polar-gateway.php:70
+msgid "Description"
+msgstr ""
+
+#: includes/class-wc-polar-gateway.php:72
+msgid "Payment method description that customers will see during checkout."
+msgstr ""
+
+#: includes/class-wc-polar-gateway.php:73
+msgid "Pay securely with credit or debit card. You will be redirected to our secure payment page."
+msgstr ""
+
+#: includes/class-wc-polar-gateway.php:77
+msgid "Polar Access Token"
+msgstr ""
+
+#: includes/class-wc-polar-gateway.php:79
+msgid "Enter your Access Token from Polar.sh Dashboard."
+msgstr ""
+
+#: includes/class-wc-polar-gateway.php:84
+msgid "Product Mapping"
+msgstr ""
+
+#: includes/class-wc-polar-gateway.php:86
+msgid "Choose how to map WooCommerce products to Polar Product IDs. Recommended: \"Single Product + Dynamic Pricing\""
+msgstr ""
+
+#: includes/class-wc-polar-gateway.php:89
+msgid "Single Product + Dynamic Pricing (Recommended)"
+msgstr ""
+
+#: includes/class-wc-polar-gateway.php:90
+msgid "Single Product (Use catalog price)"
+msgstr ""
+
+#: includes/class-wc-polar-gateway.php:91
+msgid "From Product Meta Field"
+msgstr ""
+
+#: includes/class-wc-polar-gateway.php:96
+msgid "Default Polar Product ID"
+msgstr ""
+
+#: includes/class-wc-polar-gateway.php:98
+msgid "Default Product ID when using \"Single Product\" modes."
+msgstr ""
+
+#: includes/class-wc-polar-gateway.php:103
+msgid "Test Mode"
+msgstr ""
+
+#: includes/class-wc-polar-gateway.php:105
+msgid "Enable test mode"
+msgstr ""
+
+#: includes/class-wc-polar-gateway.php:107
+msgid "Use for testing during development."
+msgstr ""
+
+#: includes/class-wc-polar-gateway.php:110
+msgid "Debug Log"
+msgstr ""
+
+#: includes/class-wc-polar-gateway.php:112
+msgid "Enable logging"
+msgstr ""
+
+#. translators: %s: Log file path.
+#: includes/class-wc-polar-gateway.php:115
+#, php-format
+msgid "Save logs to %s"
+msgstr ""
+
+#: includes/class-wc-polar-gateway.php:135
+msgid "Unable to create checkout session with Polar."
+msgstr ""
+
+#: includes/class-wc-polar-gateway.php:144
+msgid "Awaiting payment via Polar."
+msgstr ""
+
+#: includes/class-wc-polar-gateway.php:153
+msgid "Payment error: "
+msgstr ""
+
+#: includes/class-wc-polar-gateway.php:170
+msgid "Polar Access Token is not configured."
+msgstr ""
+
+#: includes/class-wc-polar-gateway.php:256
+msgid "Default Product ID is not configured."
+msgstr ""
+
+#. translators: %s: Product name
+#: includes/class-wc-polar-gateway.php:298
+#, php-format
+msgid "Product \"%s\" is marked as subscription but has no Polar Product ID. Please configure it in the product settings."
+msgstr ""
+
+#: includes/class-wc-polar-gateway.php:330
+msgid "Default Product ID is not configured. Please create a Product on Polar and enter its ID in Settings."
+msgstr ""
+
+#: includes/class-wc-polar-gateway.php:376
+msgid "No Polar Product ID found in products."
+msgstr ""
+
+#: includes/class-wc-polar-gateway.php:454
+msgid "Payment confirmed via Polar."
+msgstr ""
+
+#: includes/class-wc-polar-gateway.php:493
+msgid "Subscription created and payment confirmed via Polar."
+msgstr ""
+
+#: includes/class-wc-polar-gateway.php:509
+msgid "You will be redirected to Polar payment page..."
+msgstr ""
+
+#: includes/class-wc-polar-gateway.php:534
+msgid "Polar Payment Settings"
+msgstr ""
+
+#: includes/class-wc-polar-gateway.php:562
+msgid "Enable Polar Subscription"
+msgstr ""
+
+#: includes/class-wc-polar-gateway.php:565
+msgid "Check this if this product should be sold as a subscription via Polar."
+msgstr ""
+
+#: includes/class-wc-polar-gateway.php:570
+msgid "Polar Product ID"
+msgstr ""
+
+#: includes/class-wc-polar-gateway.php:578
+msgid "Enter the Polar Product ID for this product. Required if subscription is enabled or using \"From Product Meta Field\" mapping."
+msgstr ""
