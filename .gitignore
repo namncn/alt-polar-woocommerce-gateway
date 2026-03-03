@@ -1,0 +1,46 @@
+# WordPress
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Logs
+*.log
+wp-content/polar-payment.log
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
+
+# Node (if using build tools)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Composer
+vendor/
+composer.lock
+
+# Build files
+*.min.js
+*.min.css
+.sass-cache/
+
+# OS files
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+
+# Testing
+phpunit.xml
+tests/_output/*
