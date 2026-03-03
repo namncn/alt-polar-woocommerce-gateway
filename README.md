@@ -120,6 +120,10 @@ GPL v2 or later
 
 ## Changelog
 
+### 1.2.0 (2026-03-03)
+- 🔧 Fixed: Applied WordPress Coding Standards (WPCS) to entire codebase
+- 🔧 Fixed: Updated variable sanitizations and Yoda conditions
+
 ### 1.1.1 (2024-12-22)
 - 🔧 Fixed Product ID format in all documentation
 - 🔧 Updated examples to use correct UUID format (xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx)

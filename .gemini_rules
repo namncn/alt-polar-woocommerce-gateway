@@ -1,0 +1,45 @@
+# Antigravity Rules for WordPress Plugin Development
+
+When generating or modifying code in this project, you MUST strictly adhere to the following WordPress Coding Standards (WPCS) and best practices:
+
+## 1. Output Escaping 🛡️
+- Every piece of dynamic data must be escaped before outputting.
+- Use the correct escaping function based on context:
+  - HTML body: `esc_html()`, `esc_html__()`, `esc_html_e()`
+  - HTML attributes: `esc_attr()`, `esc_attr__()`, `esc_attr_e()`
+  - URLs: `esc_url()`, `esc_url_raw()` (for database)
+  - Textarea: `esc_textarea()`
+  - JavaScript variables: `wp_json_encode()` or `esc_js()`
+- Never use simple `echo $var;`, always wrap with an escaping function.
+
+## 2. Input Sanitization & Validation 🧼
+- Never trust user input. Always sanitize data from `$_GET`, `$_POST`, `$_REQUEST`, etc.
+- Use `wp_unslash()` before sanitizing when processing `$_POST`/`$_GET` array data.
+  - Example: `$name = sanitize_text_field( wp_unslash( $_POST['name'] ?? '' ) );`
+- All forms and AJAX endpoints MUST verify a WordPress Nonce (`wp_verify_nonce`).
+
+## 3. Formatting & Whitespace 🧹
+- **Indentation:** Use **TABS**, not spaces.
+- **Braces Placement:** Opening brace `{` MUST be on the same line as the statement (class, function, if, while).
+  - Example: `function my_func() {`
+- **Spaces inside parentheses:** Always add a space after the opening parenthesis and before the closing parenthesis.
+  - Correct: `if ( $condition ) {`
+  - Incorrect: `if ($condition) {`
+- **Spaces in Array declaration:** No space before array closer, etc.
+- **Yoda Conditions:** Always write complex conditions in Yoda style.
+  - Correct: `if ( true === $my_var ) {`
+  - Incorrect: `if ( $my_var === true ) {`
+
+## 4. Documentation Comments 📝
+- ALL files MUST have a file header block with `@package alt-polar-payment-gateway`.
+- ALL classes, properties, and methods MUST have docblock comments detailing their purpose, `@param`, and `@return` types.
+- **Inline comments:** Must always end with a full stop (.), exclamation mark (!), or question mark (?).
+  - Correct: `// Create temporary input.`
+  - Incorrect: `// Create temporary input`
+
+## 5. Security & Stability Best Practices 🔧
+- Use `wp_json_encode()` instead of generic `json_encode()`.
+- Use `gmdate()` for absolute UTC time logs instead of `date()` to prevent timezone differences.
+- Prefix all custom global functions, classes, and options with `polar_` or `Polar_` to prevent conflicts.
+
+By following these rules, Antigravity will ensure all generated code consistently passes PHP_CodeSniffer validation with the `--standard=WordPress` ruleset and runs cleanly on production environments.
