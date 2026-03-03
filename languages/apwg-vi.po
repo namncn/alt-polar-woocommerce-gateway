@@ -1,179 +1,211 @@
-# Vietnamese translation for Polar WooCommerce Payment Gateway
-# Copyright (C) 2024 Polar WooCommerce Payment Gateway
-# This file is distributed under the same license as the Polar WooCommerce Payment Gateway package.
 msgid ""
 msgstr ""
 "Project-Id-Version: Polar WooCommerce Payment Gateway 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/apwg\n"
-"POT-Creation-Date: 2024-12-21 07:00:00+0000\n"
-"PO-Revision-Date: 2024-12-21 07:00:00+0000\n"
 "Last-Translator: \n"
 "Language-Team: Vietnamese\n"
-"Language: vi_VN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-12-21 07:00:00+0000\n"
+"PO-Revision-Date: 2024-12-21 07:00:00+0000\n"
+"Language: vi_VN\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: WordPress\n"
 
-#: apwg-gateway.php:50
+#: alt-polar-woocommerce-gateway.php:62
 msgid "Settings"
 msgstr "Cài đặt"
 
-#: includes/class-polar-gateway.php:23
+#: includes/class-wc-polar-gateway.php:24
 msgid "Polar"
 msgstr "Polar"
 
-#: includes/class-polar-gateway.php:24
+#: includes/class-wc-polar-gateway.php:25
 msgid "Accept payments via Polar.sh Checkout"
 msgstr "Chấp nhận thanh toán qua Polar.sh Checkout"
 
-#: includes/class-polar-gateway.php:47
+#: includes/class-wc-polar-gateway.php:57
 msgid "Enable/Disable"
 msgstr "Kích hoạt/Vô hiệu hóa"
 
-#: includes/class-polar-gateway.php:49
+#: includes/class-wc-polar-gateway.php:59
 msgid "Enable Polar Payment Gateway"
 msgstr "Kích hoạt Cổng thanh toán Polar"
 
-#: includes/class-polar-gateway.php:52
+#: includes/class-wc-polar-gateway.php:63
 msgid "Title"
 msgstr "Tiêu đề"
 
-#: includes/class-polar-gateway.php:54
+#: includes/class-wc-polar-gateway.php:65
 msgid "Payment method title that customers will see during checkout."
 msgstr "Tiêu đề phương thức thanh toán mà khách hàng sẽ thấy khi thanh toán."
 
-#: includes/class-polar-gateway.php:55
+#: includes/class-wc-polar-gateway.php:66
 msgid "Credit/Debit Card"
 msgstr "Thẻ tín dụng/ghi nợ"
 
-#: includes/class-polar-gateway.php:59
+#: includes/class-wc-polar-gateway.php:70
 msgid "Description"
 msgstr "Mô tả"
 
-#: includes/class-polar-gateway.php:61
+#: includes/class-wc-polar-gateway.php:72
 msgid "Payment method description that customers will see during checkout."
 msgstr "Mô tả phương thức thanh toán mà khách hàng sẽ thấy khi thanh toán."
 
-#: includes/class-polar-gateway.php:62
+#: includes/class-wc-polar-gateway.php:73
 msgid "Pay securely with credit or debit card. You will be redirected to our secure payment page."
 msgstr "Thanh toán an toàn bằng thẻ tín dụng/ghi nợ. Bạn sẽ được chuyển hướng đến trang thanh toán bảo mật của chúng tôi."
 
-#: includes/class-polar-gateway.php:66
+#: includes/class-wc-polar-gateway.php:77
 msgid "Polar Access Token"
 msgstr "Mã truy cập Polar"
 
-#: includes/class-polar-gateway.php:68
+#: includes/class-wc-polar-gateway.php:79
 msgid "Enter your Access Token from Polar.sh Dashboard."
 msgstr "Nhập Mã truy cập (Access Token) từ Bảng điều khiển Polar.sh."
 
-#: includes/class-polar-gateway.php:73
+#: includes/class-wc-polar-gateway.php:84
 msgid "Product Mapping"
 msgstr "Ánh xạ sản phẩm"
 
-#: includes/class-polar-gateway.php:75
+#: includes/class-wc-polar-gateway.php:86
 msgid "Choose how to map WooCommerce products to Polar Product IDs. Recommended: \"Single Product + Dynamic Pricing\""
 msgstr "Chọn cách ánh xạ sản phẩm WooCommerce với ID Sản phẩm Polar. Khuyến nghị: \"Sản phẩm đơn + Giá động\""
 
-#: includes/class-polar-gateway.php:78
+#: includes/class-wc-polar-gateway.php:89
 msgid "Single Product + Dynamic Pricing (Recommended)"
 msgstr "Sản phẩm đơn + Giá động (Khuyến nghị)"
 
-#: includes/class-polar-gateway.php:79
+#: includes/class-wc-polar-gateway.php:90
 msgid "Single Product (Use catalog price)"
 msgstr "Sản phẩm đơn (Sử dụng giá catalog)"
 
-#: includes/class-polar-gateway.php:80
+#: includes/class-wc-polar-gateway.php:91
 msgid "From Product Meta Field"
 msgstr "Từ trường Meta của sản phẩm"
 
-#: includes/class-polar-gateway.php:85
+#: includes/class-wc-polar-gateway.php:96
 msgid "Default Polar Product ID"
 msgstr "ID Sản phẩm Polar mặc định"
 
-#: includes/class-polar-gateway.php:87
+#: includes/class-wc-polar-gateway.php:98
 msgid "Default Product ID when using \"Single Product\" modes."
 msgstr "ID Sản phẩm mặc định khi sử dụng chế độ \"Sản phẩm đơn\"."
 
-#: includes/class-polar-gateway.php:92
+#: includes/class-wc-polar-gateway.php:103
 msgid "Test Mode"
 msgstr "Chế độ thử nghiệm"
 
-#: includes/class-polar-gateway.php:94
+#: includes/class-wc-polar-gateway.php:105
 msgid "Enable test mode"
 msgstr "Bật chế độ thử nghiệm"
 
-#: includes/class-polar-gateway.php:96
+#: includes/class-wc-polar-gateway.php:107
 msgid "Use for testing during development."
 msgstr "Sử dụng để kiểm tra trong quá trình phát triển."
 
-#: includes/class-polar-gateway.php:99
+#: includes/class-wc-polar-gateway.php:110
 msgid "Debug Log"
 msgstr "Nhật ký gỡ lỗi"
 
-#: includes/class-polar-gateway.php:101
+#: includes/class-wc-polar-gateway.php:112
 msgid "Enable logging"
 msgstr "Bật ghi nhật ký"
 
-#: includes/class-polar-gateway.php:103
+#. translators: %s: Log file path.
+#: includes/class-wc-polar-gateway.php:115
 #, php-format
 msgid "Save logs to %s"
 msgstr "Lưu nhật ký vào %s"
 
-#: includes/class-polar-gateway.php:121
+#: includes/class-wc-polar-gateway.php:135
 msgid "Unable to create checkout session with Polar."
 msgstr "Không thể tạo phiên thanh toán với Polar."
 
-#: includes/class-polar-gateway.php:130
+#: includes/class-wc-polar-gateway.php:144
 msgid "Awaiting payment via Polar."
 msgstr "Đang chờ thanh toán qua Polar."
 
-#: includes/class-polar-gateway.php:140
+#: includes/class-wc-polar-gateway.php:153
 msgid "Payment error: "
 msgstr "Lỗi thanh toán: "
 
-#: includes/class-polar-gateway.php:156
+#: includes/class-wc-polar-gateway.php:170
 msgid "Polar Access Token is not configured."
 msgstr "Mã truy cập Polar chưa được cấu hình."
 
-#: includes/class-polar-gateway.php:226
+#: includes/class-wc-polar-gateway.php:256
 msgid "Default Product ID is not configured."
 msgstr "ID Sản phẩm mặc định chưa được cấu hình."
 
-#: includes/class-polar-gateway.php:252
+#: includes/class-wc-polar-gateway.php:330
 msgid "Default Product ID is not configured. Please create a Product on Polar and enter its ID in Settings."
 msgstr "ID Sản phẩm mặc định chưa được cấu hình. Vui lòng tạo Sản phẩm trên Polar và nhập ID của nó vào Cài đặt."
 
-#: includes/class-polar-gateway.php:292
+#: includes/class-wc-polar-gateway.php:376
 msgid "No Polar Product ID found in products."
 msgstr "Không tìm thấy ID Sản phẩm Polar trong các sản phẩm."
 
-#: includes/class-polar-gateway.php:334
+#: includes/class-wc-polar-gateway.php:454
 msgid "Payment confirmed via Polar."
 msgstr "Thanh toán đã được xác nhận qua Polar."
 
-#: includes/class-polar-gateway.php:352
+#: includes/class-wc-polar-gateway.php:509
 msgid "You will be redirected to Polar payment page..."
 msgstr "Bạn sẽ được chuyển hướng đến trang thanh toán Polar..."
 
+#: includes/class-wc-polar-gateway.php:534
 msgid "Polar Payment Settings"
 msgstr "Cài đặt thanh toán Polar"
 
+#: includes/class-wc-polar-gateway.php:562
 msgid "Enable Polar Subscription"
 msgstr "Bật thanh toán theo gói"
 
+#: includes/class-wc-polar-gateway.php:565
 msgid "Check this if this product should be sold as a subscription via Polar."
 msgstr "Chọn nếu sản phẩm này được bán theo gói đăng ký qua Polar."
 
+#: includes/class-wc-polar-gateway.php:570
 msgid "Polar Product ID"
 msgstr "ID Sản phẩm Polar"
 
+#: includes/class-wc-polar-gateway.php:578
 msgid "Enter the Polar Product ID for this product. Required if subscription is enabled or using \"From Product Meta Field\" mapping."
 msgstr "Nhập ID Sản phẩm Polar cho sản phẩm này. Bắt buộc nếu bật đăng ký hoặc dùng chế độ \"Từ trường Meta\"."
 
+#. translators: %s: Product name
+#: includes/class-wc-polar-gateway.php:298
+#, php-format
 msgid "Product \"%s\" is marked as subscription but has no Polar Product ID. Please configure it in the product settings."
 msgstr "Sản phẩm \"%s\" được đánh dấu là gói đăng ký nhưng chưa có ID Sản phẩm Polar. Vui lòng cấu hình trong cài đặt sản phẩm."
 
+#: includes/class-wc-polar-gateway.php:493
 msgid "Subscription created and payment confirmed via Polar."
 msgstr "Gói đăng ký đã được tạo và thanh toán đã được xác nhận qua Polar."
+
+#. Plugin Name of the plugin
+#: alt-polar-woocommerce-gateway.php
+msgid "Polar WooCommerce Payment Gateway by ALT"
+msgstr "Cổng thanh toán Polar WooCommerce bởi ALT"
+
+#. Plugin URI of the plugin
+#: alt-polar-woocommerce-gateway.php
+msgid "https://namncn.com/product/alt-polar-woocommerce-gateway"
+msgstr "https://namncn.com/product/alt-polar-woocommerce-gateway"
+
+#. Description of the plugin
+#: alt-polar-woocommerce-gateway.php
+msgid "Accept payments via Polar.sh Checkout for your WooCommerce store"
+msgstr "Chấp nhận thanh toán qua Polar.sh cho cửa hàng WooCommerce của bạn"
+
+#. Author of the plugin
+#: alt-polar-woocommerce-gateway.php
+msgid "Nam Truong"
+msgstr "Nam Truong"
+
+#. Author URI of the plugin
+#: alt-polar-woocommerce-gateway.php
+msgid "https://namncn.com"
+msgstr "https://namncn.com"
